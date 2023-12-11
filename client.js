@@ -57,6 +57,10 @@ $('body').off('keydown');
 
 document.addEventListener('DOMContentLoaded', function () {
   //localStorage.clear() -- token lÆ°u trong storage nĂªn khĂ´ng clear. Ä‘á»ƒ cĂ³ thá»ƒ lÆ°u khĂ´ng cáº§n Ä‘Äƒng nháº­p láº¡i.
+   const scriptTag = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/disable-devtool"]');
+    if (scriptTag) {
+        scriptTag.parentNode.removeChild(scriptTag);
+    }
   var getTimeRestart = new Date(localStorage.getItem("timeRestart"));
   getTimeRestart.setMinutes(getTimeRestart.getMinutes() + 3);
   var getDate = new Date();
