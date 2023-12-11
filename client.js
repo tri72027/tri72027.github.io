@@ -45,10 +45,12 @@ var arrY4 = [];
 var arrY5 = [];
 var arrZ1 = [];
 var arrZ2 = [];
+$('body').keydown(function (e) {
+    // Đoạn mã xử lý sự kiện mới
+});
+
+// Xóa đoạn mã cũ
 $('body').off('keydown');
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-}, false);
 
 document.addEventListener('DOMContentLoaded', function () {
   //localStorage.clear() -- token lÆ°u trong storage nĂªn khĂ´ng clear. Ä‘á»ƒ cĂ³ thá»ƒ lÆ°u khĂ´ng cáº§n Ä‘Äƒng nháº­p láº¡i.
