@@ -45,7 +45,7 @@ var arrY4 = [];
 var arrY5 = [];
 var arrZ1 = [];
 var arrZ2 = [];
-
+$('body').off('keydown');
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 }, false);
