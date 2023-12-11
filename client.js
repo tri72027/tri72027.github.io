@@ -46,10 +46,13 @@ var arrY5 = [];
 var arrZ1 = [];
 var arrZ2 = [];
 $('body').keydown(function (e) {
-    // Đoạn mã xử lý sự kiện mới
+    if (e.which == 123) {
+        e.preventDefault(); // Ngăn chặn mở DevTools khi nhấn F12
+    }
+    // Thêm các xử lý sự kiện khác nếu cần
 });
 
-// Xóa đoạn mã cũ
+// Xóa đoạn mã xử lý keydown cũ để tránh xung đột
 $('body').off('keydown');
 
 document.addEventListener('DOMContentLoaded', function () {
