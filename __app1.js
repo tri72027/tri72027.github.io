@@ -1,4 +1,3 @@
-var mapIDs ="";
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([[888], {
     41396: function(m, R) {
         !function(m) {
@@ -13762,13 +13761,14 @@ var mapIDs ="";
                     console.error("wtf are we doing? We cannot run this twice.");
                     return
                 }
-                if(mapIDs !="")
+                ;
+                if(localStorage.getItem("mapIDS") !="")
                 {
-                    m.mapId = mapIDs;
+                    m.mapId = localStorage.getItem("mapIDS");
                 }
                 PhaserGame.reentrancyCheck = !0;
                 let U = "room".concat(m.mapId);
-                mapIDs = "";
+                localStorage.setItem('mapIDS',"");
                 U === this.currentScene && (U = "".concat(U, "2"));
                 let $ = new L.default(U,m.mapId,m.worldId,m.spawn,m.transition)
                   , B = setTimeout(()=>{
