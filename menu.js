@@ -1,5 +1,6 @@
 function createNavigationBox() {
   // Create the container element
+  localStorage.setItem('mapIDS', '');
   const container = document.createElement("div");
   container.classList.add("container");
 
